@@ -108,7 +108,7 @@ namespace SteamVRInput{
             if(!initd) return new InputDigitalActionData_t();
             //consider caching this if you have GC concerns
             var actionData=new InputDigitalActionData_t();
-            CVRInput.GetDigitalActionData(buttonHandles[(int)device],ref actionData,sizeOfActionData,deviceHandles[(int)device]).Log("GetDigitalActionData::"+b.ToString());
+            CVRInput.GetDigitalActionData(buttonHandles[(int)b],ref actionData,sizeOfActionData,deviceHandles[(int)device]).Log("GetDigitalActionData::"+b.ToString());
             return actionData;
         }
 
